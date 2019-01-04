@@ -10,17 +10,20 @@ var appData = {
     savings: false
 };
 
-// for (let i = 0; i < 2; i++) {
-//     let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
-//         b = prompt("Во сколько обойдется?", "");
+for (let i = 0; i < 2; i++) {
+    let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
+        b = prompt("Во сколько обойдется?", "");
 
-//     if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null 
-//         && a != '' && b != '' && a.length < 50 ) {
-//         console.log("done");
+    if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null 
+        && a != '' && b != '' && a.length < 50 ) {
+        console.log("done");
 
-//         appData.expenses[a] = b;
-//     }
-// }
+        appData.expenses[a] = b;
+    } else {
+        console.log("bad result");
+        i--;
+    }
+}
 
 // do {
 //     var i = 0;
@@ -32,24 +35,32 @@ var appData = {
 //         console.log("done");
 
 //         appData.expenses[a] = b;
-//         i++;
+       
+//     } else {
+//         console.log("bad result");
+//         i--;
 //     }
+//     i++;
 // } while (i < 2);
 
-var i = 0;
-while (i < 2) {
+// var i = 0;
+// while (i < 2) {
 
-    let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
-        b = prompt("Во сколько обойдется?", "");
+//     let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
+//         b = prompt("Во сколько обойдется?", "");
 
-    if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null 
-        && a != '' && b != '' && a.length < 50 ) {
-        console.log("done");
+//     if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null 
+//         && a != '' && b != '' && a.length < 50 ) {
+//         console.log("done");
 
-        appData.expenses[a] = b;
-        i++;
-    }
-}
+//         appData.expenses[a] = b;
+    
+//     } else {
+//         console.log("bad result");
+//         i--;
+//     }
+//     i++;
+// }
 
 
 
